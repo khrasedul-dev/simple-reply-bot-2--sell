@@ -7,6 +7,17 @@ bot.start(ctx=>{
     ctx.reply("The bot only available in the group")
 })
 
+bot.on('new_chat_members',ctx=>{
+    
+    ctx.reply(`
+              Our refund storelist is as below (Contact @refundagent for refunds)
+Stores that are not on our googlesheet please contact (Can do almost all stores)
+Limits up to $25,000 for paypal stores INSTANT REFUNDS
+SERVICES FEES LOW @ 10%
+https://docs.google.com/spreadsheets/d/1QqlggC72AZS37ti_Zn1skrw-EUUXuyGS-qmN5-XO5nM/edit?usp=sharing
+`)
+    
+})
 
 bot.command('faq',ctx=>{
     ctx.replyWithHTML(`
