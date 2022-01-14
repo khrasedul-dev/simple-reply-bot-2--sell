@@ -66,6 +66,34 @@ bot.hears('stores',ctx=>{
     }).catch((e)=>ctx.reply("Something is wrong"))
 })
 
+
+bot.command('store',ctx=>{
+    ctx.replyWithHTML(`
+    Stores: \n
+    Our refund storelist is as below (Contact @refundagent for refunds)
+    Stores that are not on our googlesheet please contact (Can do almost all stores)
+    Limits up to $25,000 for paypal stores INSTANT REFUNDS
+    SERVICES FEES LOW @ 10%
+    https://docs.google.com/spreadsheets/d/1QqlggC72AZS37ti_Zn1skrw-EUUXuyGS-qmN5-XO5nM/edit?usp=sharing
+    `,{
+        parse_mode: "HTML"
+    }).catch((e)=>ctx.reply("Something is wrong"))
+})
+
+bot.hears('store',ctx=>{
+    ctx.replyWithHTML(`
+    Stores: \n
+    Our refund storelist is as below (Contact @refundagent for refunds)
+    Stores that are not on our googlesheet please contact (Can do almost all stores)
+    Limits up to $25,000 for paypal stores INSTANT REFUNDS
+    SERVICES FEES LOW @ 10%
+    https://docs.google.com/spreadsheets/d/1QqlggC72AZS37ti_Zn1skrw-EUUXuyGS-qmN5-XO5nM/edit?usp=sharing
+    `,{
+        parse_mode: "HTML"
+    }).catch((e)=>ctx.reply("Something is wrong"))
+})
+
+
 bot.command('vouches',ctx=>{
     ctx.reply(`
     Vouches:\n
@@ -75,6 +103,22 @@ bot.command('vouches',ctx=>{
 })
 
 bot.hears('vouches',ctx=>{
+    ctx.reply(`
+    Vouches:\n
+    @worldwiderefundvouch
+`).catch((e)=>ctx.reply("Somthing is wrong"))
+
+})
+
+bot.command('vouch',ctx=>{
+    ctx.reply(`
+    Vouches:\n
+    @worldwiderefundvouch
+`).catch((e)=>ctx.reply("Somthing is wrong"))
+
+})
+
+bot.hears('vouch',ctx=>{
     ctx.reply(`
     Vouches:\n
     @worldwiderefundvouch
